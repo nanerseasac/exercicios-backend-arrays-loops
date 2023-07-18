@@ -1,12 +1,13 @@
-const arrayA = [5, 32, 3, 44, 1];
-const arrayB = [57, 4, 21, 2, 13];
 
-const arrTotal = [...arrayA, ...arrayB];
+const arrayA = [1, 3, 3, 44, 11];
+const arrayB = [57, 4, 21, 32, 13];
 
-const arrOrdenado = arrTotal.sort((a, b) => a - b);
 
-const arrCortado = arrOrdenado.slice(0, 5);
 
-for (let i = 0; i < arrCortado.length; i++) {
-	console.log(arrCortado[i]);
+for(let i = 0;i < 5; i++) {
+	if(arrayA[i] > arrayB[i]) {
+		console.log(arrayB[i])
+	}else if(arrayB[i] > arrayA[i]) {
+		console.log(arrayA[i])
+	}
 }
